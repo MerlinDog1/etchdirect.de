@@ -15,16 +15,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Top Bar (Mobile Only) -->
     <div class="top-bar">
         <span class="top-bar__text">Ihr Handelspartner für Chemisches Ätzen – Ausschließlich für den Fachhandel</span>
     </div>
 
+    <!-- Header -->
     <header class="header">
         <div class="container header__inner">
             <a href="index.html" class="logo">Etch<span>Direct</span></a>
+            
+            <!-- Desktop Navigation -->
             <nav class="nav" aria-label="Hauptnavigation">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
                     <li class="nav__item">
                         <a href="services/chemical-etching.html" class="nav__link">Leistungen</a>
                         <ul class="nav__dropdown">
@@ -41,12 +47,16 @@
                     <li class="nav__item"><a href="contact.html" class="nav__link">Kontakt</a></li>
                 </ul>
             </nav>
+            
+            <!-- Mobile Menu Toggle -->
             <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">
                 <span class="menu-toggle__bar"></span>
                 <span class="menu-toggle__bar"></span>
                 <span class="menu-toggle__bar"></span>
             </button>
         </div>
+        
+        <!-- Mobile Navigation -->
         <nav class="nav--mobile" aria-label="Mobile Navigation">
             <ul class="nav__list">
                 <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
@@ -61,11 +71,13 @@
         </nav>
     </header>
 
+    <!-- Page Header -->
     <section class="page-header">
         <h1 class="page-header__title">Kontakt</h1>
         <p class="page-header__subtitle">Wir freuen uns auf Ihre Anfrage und beraten Sie gerne zu Ihrem Projekt</p>
     </section>
 
+    <!-- Contact Section -->
     <section class="contact">
         <div class="container">
             <div class="contact__grid">
@@ -85,7 +97,7 @@
                     <div class="contact__info-item">
                         <div class="contact__info-label">Telefon</div>
                         <div class="contact__info-value">
-                            <a href="tel:+498912345678">+49 89 12345678</a>
+                            <a href="tel:+498****5678">+49 89 12345678</a>
                         </div>
                     </div>
                     <hr class="divider">
@@ -106,11 +118,13 @@
                     </div>
                 </div>
                 
-                <form class="contact-form" action="#" method="POST">
+                <!-- Contact Form -->
+                <form class="contact-form" id="contactForm" action="#" method="POST" novalidate>
                     <h3 style="color: white; font-family: 'Montserrat', sans-serif; font-size: 18px; margin-bottom: 1rem;">Nachricht senden</h3>
                     <div class="form-group">
                         <label for="name" class="form-label">Name *</label>
                         <input type="text" id="name" name="name" class="form-input" required>
+                        <span class="form-error" id="nameError"></span>
                     </div>
                     <div class="form-group">
                         <label for="company" class="form-label">Firma</label>
@@ -119,33 +133,60 @@
                     <div class="form-group">
                         <label for="email" class="form-label">E-Mail *</label>
                         <input type="email" id="email" name="email" class="form-input" required>
+                        <span class="form-error" id="emailError"></span>
                     </div>
                     <div class="form-group">
                         <label for="phone" class="form-label">Telefon</label>
                         <input type="tel" id="phone" name="phone" class="form-input">
                     </div>
                     <div class="form-group">
+                        <label for="subject" class="form-label">Betreff</label>
+                        <select id="subject" name="subject" class="form-input">
+                            <option value="">Bitte wählen...</option>
+                            <option value=" Angebot">Angebot anfordern</option>
+                            <option value=" Technische Frage">Technische Frage</option>
+                            <option value=" Bestellung">Bestellung</option>
+                            <option value=" Sonstiges">Sonstiges</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
                         <label for="message" class="form-label">Nachricht *</label>
                         <textarea id="message" name="message" class="form-textarea" required></textarea>
+                        <span class="form-error" id="messageError"></span>
                     </div>
-                    <button type="submit" class="form-button">Nachricht senden</button>
+                    <button type="submit" class="form-button" id="submitBtn">Nachricht senden</button>
+                    
+                    <!-- Success Message -->
+                    <div class="form-success" id="formSuccess">
+                        <div class="form-success__icon">✓</div>
+                        <h4 class="form-success__title">Nachricht erfolgreich gesendet!</h4>
+                        <p class="form-success__text">Vielen Dank für Ihre Anfrage. Wir werden uns in Kürze bei Ihnen melden.</p>
+                    </div>
                 </form>
             </div>
         </div>
     </section>
 
+    <!-- Why EtchDirect Section -->
     <section class="benefits">
         <div class="container">
             <h2 class="benefits__title">Warum EtchDirect?</h2>
             <hr class="divider">
             <div class="benefits__grid">
+                <div class="benefits__text">
+                    <p>
+                        Trade EtchDirect ist ein spezialisierter Handelspartner, der einen erstklassigen chemischen Ätzservice für die deutsche Schilderindustrie anbietet. 
+                        Die Zusammenarbeit mit E.T.D. ist wie ein eigener Ätzbereich, ohne in Ausrüstung und Fachpersonal investieren zu müssen.
+                    </p>
+                    <p>
+                        Unser Ziel ist es, langfristige Beziehungen zu unseren Kunden aufzubauen und alle Anfragen streng vertraulich zu behandeln.
+                    </p>
+                </div>
                 <ul class="benefits__list">
                     <li>Spezialisierter Handelspartner</li>
                     <li>Vertraulicher Service</li>
                     <li>Schnelle Angebote</li>
                     <li>Schnelle Durchlaufzeiten</li>
-                </ul>
-                <ul class="benefits__list">
                     <li>Modernste Ätztechnologie</li>
                     <li>Hohe Produktionskapazität</li>
                     <li>Erfahrene Handwerker</li>
@@ -155,10 +196,11 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer__logo">Etch<span>Direct</span></div>
-            <nav class="footer__nav">
+            <nav class="footer__nav" aria-label="Fußzeilennavigation">
                 <a href="index.html" class="footer__nav-link">Home</a>
                 <a href="services/chemical-etching.html" class="footer__nav-link">Leistungen</a>
                 <a href="architectural.html" class="footer__nav-link">Architektur</a>
@@ -169,23 +211,94 @@
                 <a href="contact.html" class="footer__nav-link">Kontakt</a>
             </nav>
             <div class="footer__contact">
-                <div class="footer__contact-item"><a href="mailto:info@etchdirect.de">info@etchdirect.de</a></div>
-                <div class="footer__contact-item"><a href="tel:+498912345678">+49 89 12345678</a></div>
-                <div class="footer__contact-item">1 Industriestraße, 80331 München</div>
+                <div class="footer__contact-item">
+                    <a href="mailto:info@etchdirect.de">info@etchdirect.de</a>
+                </div>
+                <div class="footer__contact-item">
+                    <a href="tel:+498****5678">+49 89 12345678</a>
+                </div>
+                <div class="footer__contact-item">
+                    1 Industriestraße, 80331 München
+                </div>
             </div>
             <p class="footer__copy">© 2026 EtchDirect.de. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
 
+    <style>
+        /* Form Error Styles */
+        .form-error {
+            display: none;
+            color: #ff6b6b;
+            font-family: var(--font-primary);
+            font-size: 12px;
+            margin-top: 0.25rem;
+        }
+
+        .form-input.error,
+        .form-textarea.error {
+            border-color: #ff6b6b;
+        }
+
+        /* Success Message Styles */
+        .form-success {
+            display: none;
+            background-color: rgba(7, 153, 226, 0.1);
+            border: 2px solid var(--color-accent-blue);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .form-success.show {
+            display: block;
+        }
+
+        .form-success__icon {
+            font-size: 3rem;
+            color: var(--color-accent-blue);
+            margin-bottom: 1rem;
+        }
+
+        .form-success__title {
+            font-family: var(--font-primary);
+            font-size: 18px;
+            color: var(--color-white);
+            margin-bottom: 0.5rem;
+        }
+
+        .form-success__text {
+            font-family: var(--font-body);
+            font-size: 14px;
+            color: var(--color-grey-light);
+            margin: 0;
+        }
+
+        /* Hide form fields after success */
+        .contact-form.submitted .form-group,
+        .contact-form.submitted h3,
+        .contact-form.submitted .form-button {
+            display: none;
+        }
+    </style>
+
     <script>
+        // Mobile menu toggle
         const menuToggle = document.querySelector('.menu-toggle');
         const navMobile = document.querySelector('.nav--mobile');
+        
         if (menuToggle && navMobile) {
             menuToggle.addEventListener('click', function() {
                 this.classList.toggle('active');
                 navMobile.classList.toggle('active');
                 document.body.style.overflow = navMobile.classList.contains('active') ? 'hidden' : '';
+                
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !isExpanded);
+                this.setAttribute('aria-label', isExpanded ? 'Menü öffnen' : 'Menü schließen');
             });
+
+            // Close mobile menu when clicking a link
             document.querySelectorAll('.nav--mobile .nav__link').forEach(link => {
                 link.addEventListener('click', () => {
                     menuToggle.classList.remove('active');
@@ -194,6 +307,129 @@
                 });
             });
         }
+
+        // Contact Form Validation and Submission
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const formSuccess = document.getElementById('formSuccess');
+
+        // Validation functions
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        function showError(fieldId, message) {
+            const field = document.getElementById(fieldId);
+            const errorSpan = document.getElementById(fieldId + 'Error');
+            if (field && errorSpan) {
+                field.classList.add('error');
+                errorSpan.textContent = message;
+                errorSpan.style.display = 'block';
+            }
+        }
+
+        function clearError(fieldId) {
+            const field = document.getElementById(fieldId);
+            const errorSpan = document.getElementById(fieldId + 'Error');
+            if (field && errorSpan) {
+                field.classList.remove('error');
+                errorSpan.textContent = '';
+                errorSpan.style.display = 'none';
+            }
+        }
+
+        function clearAllErrors() {
+            ['name', 'email', 'message'].forEach(clearError);
+        }
+
+        // Real-time validation on blur
+        document.getElementById('name').addEventListener('blur', function() {
+            if (this.value.trim() === '') {
+                showError('name', 'Bitte geben Sie Ihren Namen ein');
+            } else {
+                clearError('name');
+            }
+        });
+
+        document.getElementById('email').addEventListener('blur', function() {
+            if (this.value.trim() === '') {
+                showError('email', 'Bitte geben Sie Ihre E-Mail-Adresse ein');
+            } else if (!validateEmail(this.value)) {
+                showError('email', 'Bitte geben Sie eine gültige E-Mail-Adresse ein');
+            } else {
+                clearError('email');
+            }
+        });
+
+        document.getElementById('message').addEventListener('blur', function() {
+            if (this.value.trim() === '') {
+                showError('message', 'Bitte geben Sie eine Nachricht ein');
+            } else if (this.value.trim().length < 10) {
+                showError('message', 'Die Nachricht muss mindestens 10 Zeichen lang sein');
+            } else {
+                clearError('message');
+            }
+        });
+
+        // Clear errors on input
+        ['name', 'email', 'message'].forEach(fieldId => {
+            const field = document.getElementById(fieldId);
+            if (field) {
+                field.addEventListener('input', () => clearError(fieldId));
+            }
+        });
+
+        // Form submission
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            clearAllErrors();
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            let isValid = true;
+
+            // Validate name
+            if (name === '') {
+                showError('name', 'Bitte geben Sie Ihren Namen ein');
+                isValid = false;
+            }
+
+            // Validate email
+            if (email === '') {
+                showError('email', 'Bitte geben Sie Ihre E-Mail-Adresse ein');
+                isValid = false;
+            } else if (!validateEmail(email)) {
+                showError('email', 'Bitte geben Sie eine gültige E-Mail-Adresse ein');
+                isValid = false;
+            }
+
+            // Validate message
+            if (message === '') {
+                showError('message', 'Bitte geben Sie eine Nachricht ein');
+                isValid = false;
+            } else if (message.length < 10) {
+                showError('message', 'Die Nachricht muss mindestens 10 Zeichen lang sein');
+                isValid = false;
+            }
+
+            if (isValid) {
+                // Show loading state
+                submitBtn.textContent = 'Wird gesendet...';
+                submitBtn.disabled = true;
+
+                // Simulate form submission (no backend)
+                setTimeout(() => {
+                    contactForm.classList.add('submitted');
+                    formSuccess.classList.add('show');
+                    
+                    // Scroll to success message
+                    formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 1000);
+            }
+        });
     </script>
 </body>
 </html>

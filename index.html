@@ -24,12 +24,12 @@
 <body>
     <!-- Top Bar (Mobile Only) -->
     <div class="top-bar">
-        <span class="top-bar__text">Ihr Handelspartner für Chemisches Ätzen – Ausschließlich für den Fachhandel</span>
+        Ihr Handelspartner für Chemisches Ätzen – Ausschließlich für den Fachhandel
     </div>
 
-    <!-- Header -->
+    <!-- Header / Navbar -->
     <header class="header">
-        <div class="container header__inner">
+        <div class="header__inner">
             <a href="index.html" class="logo">Etch<span>Direct</span></a>
             
             <!-- Desktop Navigation -->
@@ -92,109 +92,49 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero__background"></div>
+        <img src="images/hero-bg.png" alt="" class="hero__bg-image">
+        <div class="hero__overlay"></div>
         <div class="hero__content">
             <h1 class="hero__title">Deutschlands #1 Unternehmen für Chemisches Ätzen</h1>
             <p class="hero__subtitle">Spezialisierter Handelspartner für Geätzte Metallschilder, Typenschilder und Architektonische Elemente</p>
-            <hr class="divider" style="border-color: grey;">
-            <p class="hero__text">
-                Wir haben EtchDirect im Jahr 2012 mit der klaren Mission gegründet, einen erstklassigen Ätzservice für deutsche Schilderhersteller, Architekten und Designer anzubieten. 
-                Unser einzigartiger Fokus ausschließlich auf chemisches Ätzen ermöglicht es uns, schnellere Durchlaufzeiten zu wettbewerbsfähigen Preisen anzubieten.
-            </p>
-            <p class="hero__text">
-                Unser unerschütterliches Engagement für qualitativ hochwertige Arbeit, pünktlich – jedes Mal, hat uns zu Deutschlands führendem Lieferanten für geätzte Schilder und Typenschilder gemacht. 
-                Wir investieren kontinuierlich in modernste Ausrüstung und Technologien, um den bestmöglichen Service für unsere Kunden zu gewährleisten.
-            </p>
-            <p class="hero__text">
-                Im Jahr 2024 sind wir in eine neue 400 m² große Produktionsstätte gezogen, die es uns ermöglicht, unsere Produktionskapazität zu erhöhen und Projekte mit vielen tausend Teilen abzuwickeln.
-            </p>
-            <p class="hero__text">
-                Wir sind in der Lage, Express-Lieferdienste anzubieten, einschließlich Same-Day und Next-Day Lieferungen.
-            </p>
-            <p class="hero__text">
-                Unser Ziel ist es, langfristige Beziehungen zu Schilderherstellern aufzubauen, indem wir Mehrwert für sie und ihre Endkunden schaffen und konsequent hochwertige Arbeit liefern.
-            </p>
+            <div class="hero__divider"></div>
         </div>
     </section>
 
-    <!-- Contact Section (Side by Side) -->
-    <section class="contact">
+    <!-- Intro Text Section -->
+    <section class="intro">
         <div class="container">
-            <div class="contact__grid">
-                <div class="contact__info">
-                    <h2 class="contact__info-title">Kontaktieren Sie <span style="color: var(--color-accent-blue);">E.T.D.</span> heute für ein unverbindliches Angebot</h2>
-                    <hr class="divider">
-                    <p class="contact__info-text">
-                        Trade EtchDirect ist ein spezialisierter Handelspartner, der einen erstklassigen chemischen Ätzservice für die deutsche Schilderindustrie anbietet. 
-                        Die Zusammenarbeit mit E.T.D. ist wie ein eigener Ätzbereich, ohne in Ausrüstung und Fachpersonal investieren zu müssen.
+            <div class="intro__content">
+                <div class="intro__text">
+                    <p>
+                        Wir haben EtchDirect im Jahr 2012 mit der klaren Mission gegründet, einen erstklassigen Ätzservice für deutsche Schilderhersteller, Architekten und Designer anzubieten. 
+                        Unser einzigartiger Fokus ausschließlich auf chemisches Ätzen ermöglicht es uns, schnellere Durchlaufzeiten zu wettbewerbsfähigen Preisen anzubieten.
                     </p>
-                    <div class="contact__info-item">
-                        <div class="contact__info-label">E-Mail</div>
-                        <div class="contact__info-value">
-                            <a href="mailto:info@etchdirect.de">info@etchdirect.de</a>
-                        </div>
-                    </div>
-                    <hr class="divider">
-                    <div class="contact__info-item">
-                        <div class="contact__info-label">Telefon</div>
-                        <div class="contact__info-value">
-                            <a href="tel:+498912345678">+49 89 12345678</a>
-                        </div>
-                    </div>
-                    <hr class="divider">
-                </div>
-                
-                <form class="contact-form" action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" id="name" name="name" class="form-input" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="form-label">E-Mail</label>
-                        <input type="email" id="email" name="email" class="form-input" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message" class="form-label">Nachricht</label>
-                        <textarea id="message" name="message" class="form-textarea" required></textarea>
-                    </div>
-                    <button type="submit" class="form-button">Nachricht senden</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section (Where state of the art meets age old craft) -->
-    <section class="two-col">
-        <div class="container">
-            <div class="two-col__grid">
-                <div class="two-col__image">
-                    <img src="images/laser-cut.jpg" alt="Laser-geschnittenes 3mm Spiegel-Edelstahl mit chemisch geätzter Oberfläche">
-                </div>
-                <div class="two-col__content">
-                    <h2 class="two-col__title">Wo modernste Technologie auf traditionelles Handwerk trifft</h2>
-                    <hr class="divider">
-                    <p class="two-col__text">
-                        Bei EtchDirect sind wir stolz auf die Qualität unserer Arbeit. Unsere erfahrenen Handwerker nutzen langjährige Erfahrung, um sicherzustellen, dass jeder Auftrag höchsten Standards entspricht.
+                    <p>
+                        Unser unerschütterliches Commitment für qualitativ hochwertige Arbeit, pünktlich – jedes Mal, hat uns zu Deutschlands führendem Lieferanten für geätzte Schilder und Typenschilder gemacht. 
+                        Wir investieren kontinuierlich in modernste Ausrüstung und Technologien, um den bestmöglichen Service für unsere Kunden zu gewährleisten.
                     </p>
-                    <p class="two-col__text">
-                        Unser einzigartiger Fokus ausschließlich auf chemisches Ätzen ermöglicht schnelle Durchlaufzeiten und wettbewerbsfähige Preise für echten Mehrwert.
+                    <p>
+                        Im Jahr 2024 sind wir in eine neue 400 m² große Produktionsstätte gezogen, die es uns ermöglicht, unsere Produktionskapazität zu erhöhen und Projekte mit vielen tausend Teilen abzuwickeln.
                     </p>
-                    <p class="two-col__text">
-                        Wir investieren in modernste Ausrüstung und entwickeln ständig neue und aufregende Optionen für unsere Kunden durch innovative Ätztechnologien.
+                    <p>
+                        Wir sind in der Lage, Express-Lieferdienste anzubieten, einschließlich Same-Day und Next-Day Lieferungen.
                     </p>
-                    <div class="text-center mt-2">
-                        <a href="services/chemical-etching.html" class="btn btn--secondary">Mehr erfahren</a>
-                    </div>
+                    <p>
+                        Unser Ziel ist es, langfristige Beziehungen zu Schilderherstellern aufzubauen, indem wir Mehrwert für sie und ihre Endkunden schaffen und konsequent hochwertige Arbeit liefern.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Benefits Section (Like having your own etching department) -->
+    <!-- Benefits Section -->
     <section class="benefits">
         <div class="container">
-            <h2 class="benefits__title">Wie ein eigener Ätzbereich</h2>
-            <hr class="divider">
+            <div class="benefits__header">
+                <h2 class="benefits__title">Wie ein eigener Ätzbereich</h2>
+                <div class="benefits__divider"></div>
+            </div>
             <div class="benefits__grid">
                 <div class="benefits__text">
                     <p>
@@ -221,26 +161,28 @@
         </div>
     </section>
 
-    <!-- Capabilities Section (The UK's chemical etching experts) -->
+    <!-- Capabilities Section -->
     <section class="capabilities">
         <div class="container">
-            <h2 class="capabilities__title">Die deutschen Experten für chemisches Ätzen</h2>
-            <hr class="divider">
+            <div class="capabilities__header">
+                <h2 class="capabilities__title">Die deutschen Experten für chemisches Ätzen</h2>
+                <div class="capabilities__divider"></div>
+            </div>
             <div class="capabilities__grid">
                 <div class="capabilities__description">
-                    <p class="benefits__text" style="color: white;">
+                    <p>
                         Chemisches Ätzen ist ein Verfahren, das Hochdruck, temperaturregulierte chemische Sprühnebel verwendet, um Material zu entfernen und ein dauerhaftes geätztes Bild oder Form im Metall zu erzeugen. 
                         Ein UV-empfindlicher Resist wird auf die Oberfläche des Materials aufgetragen und selektiv mittels eines fotografischen Prozesses entfernt, um die zu ätzenden Bereiche freizulegen.
                     </p>
-                    <p class="benefits__text" style="color: white;">
+                    <p>
                         Dieses Verfahren ermöglicht die Reproduktion von außergewöhnlich detaillierten Kunstwerken. Es gibt keine Wärmeverformung wie bei der Laserbearbeitung und keinen Werkzeugverschleiß wie bei mechanischen Gravurmethoden.
                     </p>
-                    <p class="benefits__text" style="color: white;">
+                    <p>
                         Beim Ätzvorgang wird das Material Atom für Atom aufgelöst, was eine glatte, gratfreie Oberfläche ergibt und die Materialkornstruktur unberührt lässt.
                     </p>
                 </div>
                 <div class="capabilities__list-section">
-                    <h3 class="capabilities-light__title" style="color: white;">Inhouse-Kompetenzen auf einen Blick</h3>
+                    <h3 class="capabilities__subtitle">Inhouse-Kompetenzen auf einen Blick</h3>
                     <ul class="capabilities__list">
                         <li>Maximale Plattengröße 4m x 2m</li>
                         <li>Komplexe Farbausfüllungen</li>
@@ -249,7 +191,7 @@
                         <li>Vollfarbiger Digital-UV-Druck</li>
                         <li>Hohe Produktionskapazität</li>
                     </ul>
-                    <h3 class="capabilities-light__title" style="color: white;">Materialien</h3>
+                    <h3 class="capabilities__subtitle">Materialien</h3>
                     <ul class="capabilities__list">
                         <li>Edelstahl</li>
                         <li>Messing</li>
@@ -260,6 +202,39 @@
                         <li>Andere Materialien auf Anfrage</li>
                     </ul>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Grid Section -->
+    <section class="image-grid">
+        <div class="container">
+            <div class="image-grid__header">
+                <h2 class="image-grid__title">Wo modernste Technologie auf traditionelles Handwerk trifft</h2>
+                <div class="image-grid__divider"></div>
+            </div>
+            <div class="image-grid__items">
+                <div class="image-grid__item">
+                    <img src="images/laser-cut.jpg" alt="Laser-geschnittenes Spiegel-Edelstahl mit chemisch geätzter Oberfläche">
+                </div>
+                <div class="image-grid__item">
+                    <img src="images/chemical+etching+examples.png" alt="Chemisches Ätzen Beispiele">
+                </div>
+                <div class="image-grid__item">
+                    <img src="images/patina+brass+chemical+etching.png" alt="Geätztes Messing mit Patina">
+                </div>
+                <div class="image-grid__item">
+                    <img src="images/selection+of+metal+patina.jpg" alt="Auswahl an Metall-Patina Oberflächen">
+                </div>
+                <div class="image-grid__item">
+                    <img src="images/etched+stainless+steel+and+brass+award+with+UV+print.jpg" alt="Geätzte Auszeichnung mit UV-Druck">
+                </div>
+                <div class="image-grid__item">
+                    <img src="images/chemical+milling,+etched+and+patinated+nickle.jpg" alt="Chemisch gefrästes Nickel">
+                </div>
+            </div>
+            <div class="text-center mt-2">
+                <a href="gallery.html" class="btn btn--secondary">Zur Galerie</a>
             </div>
         </div>
     </section>
@@ -292,7 +267,7 @@
                     <a href="mailto:info@etchdirect.de">info@etchdirect.de</a>
                 </div>
                 <div class="footer__contact-item">
-                    <a href="tel:+498912345678">+49 89 12345678</a>
+                    <a href="tel:+498****5678">+49 89 12345678</a>
                 </div>
                 <div class="footer__contact-item">
                     1 Industriestraße, 80331 München
